@@ -1,13 +1,8 @@
 module.exports = ({ env }) => ({
-  email: {
+  "users-permissions": {
     config: {
-      provider: 'sendgrid',
-      providerOptions: {
-        apiKey: env('SENDGRID_API_KEY'),
-      },
-      settings: {
-        defaultFrom: 'marekmarczak@interia.pl',
-        defaultReplyTo: 'marekmarczak@interia.pl',
+      jwt: {
+        expiresIn: "5m",
       },
     },
   },

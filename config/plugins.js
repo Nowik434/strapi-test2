@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  "email" {
+  email {
     config: {
       provider: 'sendgrid',
       providerOptions: {
